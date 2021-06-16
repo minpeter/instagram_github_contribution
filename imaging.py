@@ -1,16 +1,21 @@
-from PIL import Image, ImageDraw, ImageColor
+from PIL import Image, ImageDraw, ImageColor, ImageFont
 
+fontPath = "D2Coding.ttf"
 W, H = (1080,1080)
-color = "#22212C"
+bkColor = "#22212C"
+fontColor = "#FFFFE0"
 msg = """#include <stdio.h>
 void main() {
     printf("hello world");
 }
 """
 
-im = Image.new("RGB", (W,H), ImageColor.getrgb(color))
+sans16  =  ImageFont.truetype ( fontPath, 50)
+
+im = Image.new("RGB", (W,H), ImageColor.getrgb(bkColor))
 draw = ImageDraw.Draw(im)
 w, h = draw.textsize(msg)
-draw.text(((W-w)/2,(H-h)/2), msg, fill="black")
 
-im.save("hello.png", "PNG")
+draw.text((10,10), msg, font=sans16, fill=ImageColor.getrgb(fontColor))
+
+im.save("code.png", "PNG")
