@@ -6,10 +6,18 @@ repo = Repo("/home/minpeter/instagram_github_contribution")
 
 commits = list(repo.iter_commits("main", max_count=3))
 
-
 msg = """
 ===This is Test code====
 """
+commitlog = """
+"""
+
+f = open("main.py", 'r')
+lines = f.readlines()
+for line in lines:
+    msg += line
+f.close()
+
 
 
 for i in commits:
@@ -17,7 +25,7 @@ for i in commits:
     nd = datetime.datetime.now().date() #현제 날짜만
     if nd != dd:
         quit()
-    msg += str(i.message)
+    commitlog += str(i.message)
 
 
 imaging.imageMaker(msg)

@@ -8,7 +8,6 @@ sans16  =  ImageFont.truetype ( fontPath, 50)
 
 
 def imageMaker(msg):
-    print(type(msg))
     im = Image.new("RGB", (W,H), ImageColor.getrgb(bkColor))
     draw = ImageDraw.Draw(im)
    # w, h = draw.textsize(msg)
