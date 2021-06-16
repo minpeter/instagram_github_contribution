@@ -1,6 +1,7 @@
 from git import *
 import datetime
 import imaging
+import upload
 
 repo = Repo("/home/minpeter/instagram_github_contribution")
 
@@ -12,7 +13,7 @@ msg = """
 commitlog = """
 """
 
-f = open("main.py", 'r')
+f = open("imaging.py", 'r')
 lines = f.readlines()
 for line in lines:
     msg += line
@@ -29,3 +30,4 @@ for i in commits:
 
 
 imaging.imageMaker(msg)
+upload.upLoad(commitlog)

@@ -1,2 +1,10 @@
+
+# 인스타그램 계정보호
 upload.py
 config/*
+
+#개발환경 설정
+.vscode/*
+
+#파이썬 temp 파일
+__pycache__/*
