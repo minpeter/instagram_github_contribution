@@ -14,4 +14,4 @@ def imageMaker(msg):
 
     draw.text((10,10), msg, font=sans16, fill=ImageColor.getrgb(fontColor))
 
-    im.save("code.png", "PNG")
+    im.save("code.jpg")
