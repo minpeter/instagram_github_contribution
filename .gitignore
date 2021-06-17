@@ -1,7 +1,11 @@
 
 # 인스타그램 계정보호
-upload.py
 config/*
+userDate.json
+    {
+        "username" : "INPUT USERNAME",
+        "password" : "INPUT PASSWORD"
+    }
 
 #개발환경 설정
 .vscode/*

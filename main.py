@@ -14,7 +14,7 @@ msg = """
 commitlog = """
 """
 
-f = open("test.c", 'r')
+f = open("upload.py", 'r')
 lines = f.readlines()
 for line in lines:
     msg += line
