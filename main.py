@@ -10,10 +10,11 @@ commits = list(repo.iter_commits("main", max_count=3))
 msg = """
 ===This is Test code====
 """
+
 commitlog = """
 """
 
-f = open("imaging.py", 'r')
+f = open("test.c", 'r')
 lines = f.readlines()
 for line in lines:
     msg += line
