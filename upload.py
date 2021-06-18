@@ -5,11 +5,16 @@ import json
 
 
 def upLoad(commitlog):
-    cookie_del = glob.glob("config/*cookie.json")
-    os.remove(cookie_del[0])
-
-    with open('userDate.json') as json_file:
-        userDate = json.load(json_file)
+    if os.path.isfile("config/*cookie.json"):
+        cookie_del = glob.glob("config/*cookie.json")
+        os.remove(cookie_del[0])
+        
+    if os.path.isfile("config/*cookie.json"):
+        with open('userdate.json') as json_file:
+            userDate = json.load(json_file)
+    else:
+        print("userdate.json 파일이 존재하지 않습니다.")
+        print("파일생성후 다시 실행해주십시요")
 
     bot = Bot()
 

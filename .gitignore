@@ -1,14 +1,11 @@
 
 # 인스타그램 계정보호
-config/*
-userDate.json
-    {
-        "username" : "INPUT USERNAME",
-        "password" : "INPUT PASSWORD"
-    }
+config
+userdate.json
 
 #개발환경 설정
-.vscode/*
+.vscode
+.devcontainer
 
 #파이썬 temp 파일
-__pycache__/*
+__pycache__

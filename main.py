@@ -2,8 +2,10 @@ import git
 import datetime
 import imaging
 import upload
+import os
 
-repo = git.Repo("/home/minpeter/instagram_github_contribution")
+path = os.path.abspath(__file__)
+repo = git.Repo(path)
 
 commits = list(repo.iter_commits("main", max_count=3))
 
