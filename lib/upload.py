@@ -3,7 +3,6 @@ import os
 import glob
 import json
 
-
 def upLoad(commitlog):
     if os.path.isfile("config/*cookie.json"):
         cookie_del = glob.glob("config/*cookie.json")
