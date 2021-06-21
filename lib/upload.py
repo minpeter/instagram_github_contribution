@@ -9,7 +9,7 @@ def upLoad(commitlog):
         cookie_del = glob.glob("config/*cookie.json")
         os.remove(cookie_del[0])
         
-    if os.path.isfile("config/*cookie.json"):
+    if os.path.isfile("data/userdate.json"):
         with open('data/userdate.json') as json_file:
             userDate = json.load(json_file)
     else:
