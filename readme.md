@@ -27,12 +27,8 @@
 
 * [ ] 표현가능한 이미지 범위를 넘어가능 경우 다음페이지 이미지생성 기능  
 
-## 이용한 라이브러리
+## 이용한 외부 라이브러리
 
-* poillow
+* Poillow
 * gitPython
 * instabot
-* json
-* glob
-* os
-* datetime  
